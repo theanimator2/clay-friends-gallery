@@ -10,7 +10,7 @@ async function loadGallery() {
   const { data, error } = await db
     .from("clay_friends")
     .select("*")
-    .order("number", { ascending: true });
+    .order("number", { ascending: false });
 
   if (error) {
     console.error("Gallery load failed:", error);
