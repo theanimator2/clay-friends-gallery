@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Clay Friend</title>
   <style>
+    
     body {
       margin: 0;
       background: black;
@@ -37,17 +38,37 @@
       font-size: 16px;
       cursor: pointer;
     }
+    #backBtn {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: white;
+  color: black;
+  border: none;
+  padding: 10px 14px;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
   </style>
 </head>
 <body>
-  <h1 id="title">Clay Friend</h1>
+  <button id="backBtn">← Back to Gallery</button>  <h1 id="title">Clay Friend</h1>
   <img id="friend-image" alt="">
   <button id="download-btn">Download PNG</button>
 
   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
   <script src="app.js"></script>
   <script>
-    loadFriendPage();
+   <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="app.js"></script>
+<script>
+  document.getElementById("backBtn").onclick = () => {
+    window.location.href = "index.html";
+  };
+
+  loadFriendPage();
+</script>
   </script>
 </body>
 </html>
