@@ -1,1 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clay Friend</title>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      color: white;
+      font-family: Arial, sans-serif;
+      text-align: center;
+      padding: 24px 16px 40px;
+    }
 
+    h1 {
+      margin: 0 0 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    #friend-image {
+      width: min(90vw, 720px);
+      aspect-ratio: 1 / 1;
+      object-fit: contain;
+      display: block;
+      margin: 0 auto 24px;
+      background: #111;
+    }
+
+    #download-btn {
+      background: white;
+      color: black;
+      border: none;
+      padding: 14px 20px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h1 id="title">Clay Friend</h1>
+  <img id="friend-image" alt="">
+  <button id="download-btn">Download PNG</button>
+
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+  <script src="app.js"></script>
+  <script>
+    loadFriendPage();
+  </script>
+</body>
+</html>
